@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4f8ef7 0%, #a1c4fd 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Container centralizado para busca */
+.busca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    gap: 10px;
+    max-width: 420px;
+}
+
+/* Caixa de pesquisa (input e role="textbox") */
+input[type="text"],
+[role="textbox"] {
+    padding: 10px;
+    border: 1px solid #b0c4de;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 220px;
+    outline: none;
+    transition: border 0.2s;
+    background: #f8fafc;
+    color: #2a5d84;
+}
+
+input[type="text"]:focus,
+[role="textbox"]:focus {
+    border: 1.5px solid #2a5d84;
+    background: #fff;
+}
+
+#cidadeInput {
+    padding: 12px;
+    border: 1.5px solid #b0c4de;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 240px;
+    background: #f8fafc;
+    color: #2a5d84;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+#cidadeInput:focus {
+    border: 1.5px solid #2a5d84;
+    box-shadow: 0 0 4px #2a5d8433;
+}
+
+#btnBuscar {
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 12px 22px;
+    background: #2a5d84;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(42,93,132,0.08);
+}
+
+#btnBuscar:hover {
+    background: #17405e;
+    box-shadow: 0 2px 8px rgba(42,93,132,0.15);
+}
+
+.card {
+    background: #fff;
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Estiliza todos os botões e elementos com role="button" */
+button,
+[role="button"] {
+    padding: 10px 18px;
+    background: #2a5d84;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(42,93,132,0.08);
+    outline: none;
+    margin-left: 5px;
+}
+
+button:hover,
+[role="button"]:hover {
+    background: #17405e;
+    box-shadow: 0 2px 8px rgba(42,93,132,0.15);
+}
+
+button:active,
+[role="button"]:active {
+    background: #11304a;
+}
+
